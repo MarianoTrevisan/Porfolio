@@ -9,7 +9,7 @@ class Scene3 extends Phaser.Scene {
       this.add.image(400, 100, 'bomb').setScale(3)
 
 
-      var puntajefinal = this.add.text(0, 0, 'Score: ' + score,  { fontFamily: 'DS-DIGI', fontSize: 70, color: 'white' });
+      var puntajefinal = this.add.text(0, 0, 'Score: ' + score,  { fontFamily: 'Press Start 2P', fontSize: 70, color: 'white' });
       //scene.add.zone(x, y, width, height)
         // X Y del centro del rectangulo invisible
         // width, height del rectangulo invisible
@@ -17,7 +17,7 @@ class Scene3 extends Phaser.Scene {
 
 
 
-      var restartButton = this.add.text(700, 500, 'Restart', { fontFamily: 'DS-DIGI', fontSize: 20, color: 'white' })
+      var restartButton = this.add.text(700, 500, 'Restart', { fontFamily: 'Press Start 2P', fontSize: 20, color: 'white' })
       .setInteractive()
       .on('pointerdown', () => this.reiniciar() );
     }
