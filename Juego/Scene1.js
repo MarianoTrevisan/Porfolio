@@ -42,7 +42,7 @@ class Scene1 extends Phaser.Scene {
       });
 
       var logo = this.add.image(400, 300, 'logo').setScale(1);
-      var title = this.add.text(config.width / 2, config.height / 2+250, 'Press click to start', {fontFamily: 'Press Start 2P', fontSize: '32px', fill: 'black' });
+      var title = this.add.text(config.width / 2, config.height / 2+250, 'Press click to start', {fontFamily: 'DS-DIGI', fontSize: '32px', fill: 'black' });
       title.setOrigin(0.5)
       logo.setInteractive()
       logo.on('pointerdown', () => this.scene.start('juego') );
