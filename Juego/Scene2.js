@@ -82,7 +82,7 @@ class Scene2 extends Phaser.Scene {
         bombs = this.physics.add.group();
 
         //  The score
-        scoreText = this.add.text(16, 16, 'score: 0', {fontFamily: 'Press Start 2P', fontSize: '32px', fill: 'chartreuse' });
+        scoreText = this.add.text(16, 16, 'score: 0', {fontFamily: 'DS-DIGI', fontSize: '32px', fill: 'chartreuse' });
  
         //  Collide the player and the stars with the platforms
         this.physics.add.collider(player, platforms);
@@ -105,7 +105,7 @@ class Scene2 extends Phaser.Scene {
         initialTime = 30
         //timedEvent = this.time.delayedCall(1000, this.onSecond, [], this, true);
         timedEvent = this.time.addEvent({ delay: 1000, callback: this.onSecond, callbackScope: this, loop: true });
-        timeText = this.add.text(600, 16, '', { fontFamily: 'Press Start 2P', fontSize: '32px', fill: 'chartreuse' });
+        timeText = this.add.text(600, 16, '', { fontFamily: 'DS-DIGI', fontSize: '32px', fill: 'chartreuse' });
         
 
         this.jumps = 0;
@@ -229,7 +229,7 @@ class Scene2 extends Phaser.Scene {
 
         player.anims.play('turn');        
 
-        var gameOverButton = this.add.text(700, 500, 'Game Over', { fontFamily: 'Press Start 2P', fontSize: 70, color: '#ff0000' })
+        var gameOverButton = this.add.text(700, 500, 'Game Over', { fontFamily: 'DS-DIGI', fontSize: 70, color: '#ff0000' })
         .setInteractive()
         .on('pointerdown', () => this.scene.start('creditos'));
         Phaser.Display.Align.In.Center(gameOverButton, this.add.zone(400, 300, 800, 600));    
